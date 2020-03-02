@@ -23,9 +23,7 @@ public class Main3Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main3);
         Intent intent = getIntent();
-        noteid = intent.getIntExtra("noteid", 0);
-
-
+        noteid = intent.getIntExtra("noteid", -1);
 
         if(noteid != -1){
             Note note = Main2Activity.notes.get(noteid);
